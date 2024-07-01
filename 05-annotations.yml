@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: annotations
+  annotations:
+   kubernetes.io/created-by: 'kalyan'
+   jenkins.build.url: 'https://jenkins.kalyaneswar.online/expense/job/var/backend/23'
+
+spec: 
+  containers:
+    name: nginx
+    image: nginx
+
