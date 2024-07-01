@@ -4,7 +4,8 @@ metadata:
   name: resources-utilization
 spec:
   containers:
-  - name: app
+  - name: nginx
+    image: nginx
     resources:
      # soft limit
         requests:
