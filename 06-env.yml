@@ -1,0 +1,14 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: env
+
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      env:
+      - name: K8
+        value: 'learning kubernetes'
+      - name: duration
+        value: '20hrs'
