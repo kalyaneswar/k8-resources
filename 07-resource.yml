@@ -1,0 +1,16 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: resources-utilization
+spec:
+  containers:
+  - name: app
+    resources:
+     # soft limit
+        requests:
+          memory: "64Mi"
+          cpu: "250m"
+           # limits should be atleast or more than requests --> hard limit
+        limits:
+          memory: "128Mi"
+          cpu: "500m"
