@@ -1,0 +1,24 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: pod-config
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    envFrom:
+      - ConfigMapRef:
+          name: kalyaneswar
+
+    # Below is for single config, above is used to get all config map data
+    # env:
+    # - name: course
+    #   valueFrom:
+    #     configMapKeyRef:
+    #       name: kalyaneswar
+    #       key : course
+    # - name: leaner
+    #   valueFrom:
+    #     configMapKeyRef:
+    #       name: kalyaneswar
+    #       key: leaner
