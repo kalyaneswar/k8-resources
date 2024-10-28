@@ -16,5 +16,5 @@ spec:
     value: "expense"
     effect: "NoSchedule"
   - key: "project"
-  operator: "Exists"
-  effect: "NoSchedule"
+    operator: "Exists"
+    effect: "NoSchedule"

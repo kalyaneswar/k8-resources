@@ -10,6 +10,7 @@ spec:
       - ConfigMapRef:
           name: kalyaneswar
 
+
     # Below is for single config, above is used to get all config map data
     # env:
     # - name: course
